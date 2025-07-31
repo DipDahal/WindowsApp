@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{107D89FF-1F74-4797-AB18-47A32FB90521}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SSSMarksheet</RootNamespace>
+    <AssemblyName>SSSMarksheet</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Administrator\Desktop\Apps\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>62C80EDFA97530AE7F9155C61614B388240A011D</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SSSMarksheet_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DipeshNepaliDateConversion">
+      <HintPath>..\..\DipeshNepaliDateConverter\DipeshNepaliDateConverter\DipeshNepaliDateConversion\bin\Debug\DipeshNepaliDateConversion.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PayPalCoreSDK, Version=1.7.1.0, Culture=neutral, PublicKeyToken=5b4afc1ccaef40fb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PayPalCoreSDK.1.7.1\lib\net40\PayPalCoreSDK.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddMarks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMarks.Designer.cs">
+      <DependentUpon>AddMarks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStudent.Designer.cs">
+      <DependentUpon>AddStudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStudentNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStudentNew.Designer.cs">
+      <DependentUpon>AddStudentNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSubjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSubjects.Designer.cs">
+      <DependentUpon>AddSubjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Attendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Attendance.Designer.cs">
+      <DependentUpon>Attendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AttendanceReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttendanceReport.Designer.cs">
+      <DependentUpon>AttendanceReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="certificateDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="certificateDetails.designer.cs">
+      <DependentUpon>certificateDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IdentityCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IdentityCard.Designer.cs">
+      <DependentUpon>IdentityCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="letter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="letter.Designer.cs">
+      <DependentUpon>letter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Marksheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marksheet.Designer.cs">
+      <DependentUpon>Marksheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="marksLedger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marksLedger.Designer.cs">
+      <DependentUpon>marksLedger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="registerForget.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registerForget.designer.cs">
+      <DependentUpon>registerForget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sqlHelper.cs" />
+    <Compile Include="StudentsCertificateReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentsCertificateReport.designer.cs">
+      <DependentUpon>StudentsCertificateReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StudentsReport.designer.cs">
+      <DependentUpon>StudentsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubjectCreditHour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubjectCreditHour.Designer.cs">
+      <DependentUpon>SubjectCreditHour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subjectCreditHourReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subjectCreditHourReport.Designer.cs">
+      <DependentUpon>subjectCreditHourReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subjectMarks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subjectMarks.Designer.cs">
+      <DependentUpon>subjectMarks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register.Designer.cs">
+      <DependentUpon>register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subjectMarksReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subjectMarksReport.Designer.cs">
+      <DependentUpon>subjectMarksReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subjectReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subjectReport.Designer.cs">
+      <DependentUpon>subjectReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TextJustification.cs" />
+    <Compile Include="UpdateMarksEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateMarksEntry.Designer.cs">
+      <DependentUpon>UpdateMarksEntry.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddMarks.resx">
+      <DependentUpon>AddMarks.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStudent.resx">
+      <DependentUpon>AddStudent.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStudentNew.resx">
+      <DependentUpon>AddStudentNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSubjects.resx">
+      <DependentUpon>AddSubjects.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Attendance.resx">
+      <DependentUpon>Attendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AttendanceReport.resx">
+      <DependentUpon>AttendanceReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="certificateDetails.resx">
+      <DependentUpon>certificateDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IdentityCard.resx">
+      <DependentUpon>IdentityCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="letter.resx">
+      <DependentUpon>letter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marksheet.resx">
+      <DependentUpon>Marksheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marksLedger.resx">
+      <DependentUpon>marksLedger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registerForget.resx">
+      <DependentUpon>registerForget.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentsCertificateReport.resx">
+      <DependentUpon>StudentsCertificateReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StudentsReport.resx">
+      <DependentUpon>StudentsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubjectCreditHour.resx">
+      <DependentUpon>SubjectCreditHour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subjectCreditHourReport.resx">
+      <DependentUpon>subjectCreditHourReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subjectMarks.resx">
+      <DependentUpon>subjectMarks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="register.resx">
+      <DependentUpon>register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subjectMarksReport.resx">
+      <DependentUpon>subjectMarksReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subjectReport.resx">
+      <DependentUpon>subjectReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateMarksEntry.resx">
+      <DependentUpon>UpdateMarksEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Reports\AddMarksReport.mht" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="LCC11">
+      <Guid>{EDCD5812-6A06-43C3-AFAC-46EF5D14E22C}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\head.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\letterhead.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Certificate1To8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Certificate1To8Current.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CertificateSEE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CertificateSLC.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CertificateSLCOld.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CertificateXIIOLD.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CertificateXIXII.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CertificateXII.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
