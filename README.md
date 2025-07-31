@@ -3,13 +3,15 @@ WindowsApp
 
 Description:
 ------------
-This is a Windows desktop application built using .NET, C#, and WPF.
+This is a Windows desktop application built using .NET, C#, and WPF.  
+The application helps students generate their marksheets and receive certificates.  
+This is a sample version; more features will be added as the project progresses.
 
 Features:
 ---------
-- Feature 1: Brief description
-- Feature 2: Brief description
-- Feature 3: Brief description
+- Generate personalized student marksheets
+- Issue certificates based on marks
+- Simple and easy-to-use interface
 
 Installation:
 -------------
@@ -21,8 +23,12 @@ Installation:
 
 Usage:
 ------
-- Explain how to use the app here.
-- Provide any command-line options or UI instructions.
+- Open the app.
+- Enter your student details (name, roll number, subjects, and marks).
+- Click "Generate Marksheet" to create your marksheet.
+- Click "Issue Certificate" to get your certificate.
+- Save or print the generated documents as needed.
+- This is a sample version; improvements will come in future updates.
 
 Requirements:
 -------------
@@ -32,8 +38,8 @@ Requirements:
 
 Contributing:
 -------------
-Feel free to fork this repo and submit pull requests.
-Please ensure your code follows the existing style and includes appropriate tests.
+Feel free to fork this repo and submit pull requests.  
+Please follow existing code style and include tests.
 
 Contact:
 --------
